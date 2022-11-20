@@ -135,6 +135,7 @@ def main():
 print("Welcome to Love Sandwiches Data Automation")
 main()
 
+
 def get_stock_values(data):
     """
     Print out the calculated stock numbers for each sandwich type.
@@ -147,5 +148,7 @@ def get_stock_values(data):
     #     new_data[heading] = stock_num
     # return new_data
     return {heading: data for heading, data in zip(headings, data)}
+
+
 stock_values = get_stock_values(stock_data)
 print(stock_values)
